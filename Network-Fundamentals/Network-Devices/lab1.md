@@ -23,7 +23,7 @@ TOKYO Branch
 1x Cisco 2960 switch - connects PCs in local LAN
 1x 2911 router - routes traffic between network
 1x 5505 firewall - Firewall controlling traffic in/out 
-  of the New York network
+  of the Tokyo branch
 
   What I learned in this Lab
   - I Learned that switches connect within the same LAN
