@@ -1,0 +1,38 @@
+ Networking Devices
+
+## What is a Network?
+A computer network connects multiple devices together so they 
+can share resources and communicate with each other.
+
+- **Client** - a device that requests and uses services 
+  provided by a server
+- **Server** - a device that provides services or resources 
+  to clients
+- **Note:** A device can act as both a client and a server 
+  depending on the situation (example: Peer-to-Peer networks)
+
+---
+
+## Switches (Layer 2)
+- Connect devices within the **same local network (LAN)**
+- Have many ports for end devices to plug into
+- **Cannot** connect separate networks or route internet traffic
+
+---
+
+## Routers (Layer 3)
+- Have fewer ports than switches
+- Connect **different networks** together
+- Handle traffic sent across the internet
+
+---
+
+## Firewalls (Layer 3, 4, and 7)
+- Hardware devices that monitor and control traffic 
+  entering and leaving a network
+- Can be placed inside or outside the network
+- Work based on configured security rules
+- **Next-Generation Firewalls (NGFW)** include more 
+  advanced filtering features
+- **Host-based firewalls** are software firewalls that 
+  run on individual devices like a PC
