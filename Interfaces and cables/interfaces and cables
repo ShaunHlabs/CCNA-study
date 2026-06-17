@@ -1,0 +1,70 @@
+## Ethernet Basics
+- Ethernet is a coillection of network protocols and standards
+- defined by IEEE 802.3 standard
+- these speeds are measured in bits per second not bytes per second, i used to get this mixed up. (BPS)
+- 1 bit = a 0 or 1 
+- 1 byte is 8 bits
+
+## Speeds
+
+size             Bits
+1 kilobit (KB) = 1,000
+1 Megabit (MB) = 1,000,000
+1 Gigabit (GB) = 1,000,000,000
+1 Terabit (TB) = 1,000,000,000,000
+
+
+## Copper Ethernet standards
+speed       name             standard      max distance
+10 MBPS     ethernet         802.3i        100M
+100 MBPS    Fast Ethernet    802.3u        100m
+1 GBPS      Gigabit Ethernet 802.3ab       100m
+10 GBPS      10 Gig Ethernet 802.3 an     100m
+
+
+## UTP Cables
+- Unshielded twisted Pair
+- 10/100base-T = 2 pairs (4 wires)
+-1000/10GBASE-T = 4 pairs (8 wires)
+
+## Cable Types
+- Straight - through cable - connects different devices
+( pc to switch, router to switch)
+- Crossover cable - connects similar devices
+( pc to pc, switch to switch)
+- Auto MDI X - modern devices auto detect which cable is neeeded
+
+## fiber optic cables
+- uses light instead of electrical signals
+- Needs SFP (small form-factor pluggable) transceiver to connect to switches/routers
+
+### single mode
+- laser based  transmitter
+- longest distance
+- most EXPENSIVE
+- narrow
+
+### Multimode
+- Wider
+- LED based transmitter
+- Shorter than single mode
+- Cheaper than single mode
+
+
+## fiber optic standards
+standard       speed       mode                      max distance
+1000BASE-LX    1 GBPS      multi/single mode         550m 
+10GBASE-SR     10 GBPS     Multimode                 400M
+10GBASE-LR     10 GBPS     single                    10 Km
+10GBASE-ER     10 GBPS     Single                    30km
+
+
+
+
+
+
+
+
+
+
+
