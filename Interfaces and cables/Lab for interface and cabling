@@ -1,0 +1,64 @@
+# Lab 2 - Interfaces and Cables
+
+## Lab Objective
+Connect network devices together using the correct 
+cable types based on device types and distances.
+Auto MDI-X is disabled so correct cable selection matters.
+
+## Important Note
+Packet Tracer does not differentiate between single-mode 
+and multimode fiber but the correct type should be 
+considered based on distance.
+
+## Network Topology
+Two separate network trees connected through routers
+over various distances.
+
+## Devices Used
+- 4x Routers (R1, R2, R3, R4)
+- 8x Switches (SW1 - SW8)
+- 3x PCs (PC1, PC2, PC3)
+- 1x Server (SRV1)
+
+## Connections and Cable Types
+
+### Router to Router (Red cables = Fiber)
+- R1 to R3 - Gig3/0 to Gig2/0 
+  - 3 kilometer distance = Single Mode Fiber
+- R1 to R2 - Fa0/0 to Fa0/0 
+  - 50 meter distance = Copper Straight-Through
+- R3 to R4 - Gig3/0 to Gig3/0 
+  - 250 meter distance = Multimode Fiber
+
+### Router to Switch (Copper Straight-Through)
+- R2 to SW1 - Fa2/1 to Fa1/1
+- R2 to SW2 - Fa1/0 to Fa2/1
+- R4 to SW5 - Fa2/1 to Fa1/1
+- R4 to SW6 - Fa1/0 to Fa1/2
+
+### Switch to Switch (Copper Crossover)
+- SW1 to SW3 - Fa0/1 to Fa1/1
+- SW2 to SW4 - Fa0/1 to Fa0/1
+- SW5 to SW7 - Fa0/1 to Fa0/1
+- SW6 to SW8 - Fa0/1 to Fa1/1
+
+### Switch to PC/Server (Copper Straight-Through)
+- SW3 to PC1 - Fa0/1 to Fa0
+- SW4 to PC2 - Fa0/1 to Fa0
+- SW7 to PC3 - Fa0/1 to Fa0
+- SW8 to SRV1 - Fa0/1 to Fa0
+
+## Cable Selection Rules Used
+- Router to Router long distance = Fiber Optic
+- Router to Switch = Copper Straight-Through
+- Switch to Switch = Copper Crossover
+- Switch to PC/Server = Copper Straight-Through
+
+## What I Learned
+- Distance determines fiber vs copper cable choice
+- Similar devices need crossover cables
+- Different devices use straight-through cables
+- Single mode fiber for longer distances (3km+)
+- Multimode fiber for shorter distances (up to 550m)
+- Auto MDI-X normally handles cable selection 
+  automatically on modern devices
