@@ -32,5 +32,3 @@ Each folder contains:
 - [ ] I will Add more as I go Along in my Network Journey.
 
 
-
-<img width="1137" height="653" alt="image" src="https://github.com/user-attachments/assets/4654bade-5c79-457b-ada8-ba9fe298e656" />
