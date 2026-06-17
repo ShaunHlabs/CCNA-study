@@ -3,7 +3,7 @@
 
  # Devices used in each topology
 
-##New York Branch
+## New York Branch
 2x PCs -end user client devices
 1x Cisco 2960 switch - connects PCs in local LAN
 1x 2911 router - routes traffic between network
