@@ -1,0 +1,111 @@
+Day 3: OSI Model and TCP/IP Model
+
+Layers of the OSI (Open Systems Interconnection) Model
+
+There are 7 layers to the OSI model:
+
+
+Application
+Presentation
+Session
+Transport
+Network
+Data Link
+Physical
+
+
+The acronym I like to use to remember this — which I actually got from Jason Dion's Network+ study guide — is:
+
+
+Please Don't Throw Sausage Pizza Away
+
+
+
+Every first letter of each layer name is made into that acronym. I love pizza, so this one stuck with me.
+
+Data can move up and down the layers, which is called encapsulation and de-encapsulation. When interaction occurs on the same layer, it's called same-layer interaction.
+
+
+Encapsulation — data moves from the top layer downward. For example, data moves from the Application layer down to the Presentation layer, and so on.
+De-encapsulation — the exact opposite. Data moves upward on the OSI model, from Physical to Data Link, then Data Link to Network, and so on.
+
+
+What Does Each Layer Do?
+
+Starting at the top, Layer 7, and moving down — kind of like encapsulation:
+
+Layer 7 – Application
+
+This is what you see on the computer screen — what the end user interacts with.
+
+Some protocols at Layer 7 include: HTTP, HTTPS, FTP, SFTP, SMTP, SNMP, to name a few.
+
+Layer 6 – Presentation
+
+This is where the data gets encoded into the proper format to be sent over the network.
+
+Layer 5 – Session
+
+Starts, stops, and restarts communication sessions between applications.
+
+Layer 4 – Transport
+
+Provides end-to-end communication.
+
+DATA + L4 Header
+
+This is called a Segment.
+
+Layer 3 – Network
+
+Provides logical addressing (IP addresses). Provides connectivity between end hosts on different networks, outside of the LAN.
+
+
+Routers operate at Layer 3.
+
+
+
+DATA + L4 Header + L3 Header
+
+This is called a Packet.
+
+Layer 2 – Data Link
+
+Provides node-to-node connectivity and data transfer (for example, PC to switch, switch to router, router to router).
+
+
+Detects and (possibly) corrects Physical (Layer 1) errors.
+Uses Layer 2 addressing, separate from Layer 3 addressing.
+
+
+
+Switches operate at Layer 2.
+
+
+
+L2 Trailer + DATA + L4 Header + L3 Header + L2 Header
+
+This is called a Frame.
+
+Layer 1 – Physical
+
+
+Converts raw digital data into physical signals and transmits them across a network.
+Basically anything physical: NICs, cables, devices — anything hardware.
+
+
+OSI Model PDUs (Protocol Data Units)
+
+Layer(s)PDU7, 6, 5 (Application, Presentation, Session)Data4 (Transport)Segment (TCP) / Datagram (UDP)3 (Network)Packet2 (Data Link)Frame1 (Physical)Bit
+
+What Is TCP/IP?
+
+
+Similar structure to the OSI model, but with fewer layers.
+This is the model actually used in modern networks.
+The OSI model still influences how network engineers think and talk about networks.
+
+
+OSI vs. TCP/IP
+
+OSI LayerTCP/IP LayerApplicationPresentationApplicationSessionTransportTransportNetworkInternetData LinkPhysicalLink
